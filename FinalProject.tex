@@ -1,0 +1,81 @@
+\documentclass{article}
+
+%preamble
+\title {Math 480 Final Project}
+\author {Trevor Lewis}
+\date {May 22, 2013}
+
+\begin{document}
+
+\maketitle
+
+\section{Project Organization}
+\begin{enumerate}
+    \item{History/Definition of the Golden Ratio}
+    \item{Mathematical background}
+    \item{Existance in Euclidean Geometry}
+    \item{Formulas and algorithms (see section \ref{formulas})}
+    \item{Proofs}
+    \begin{itemize}
+        \item{Golden Ratio}
+        \item{Hexagon}
+        \item{Polygon}
+    \end{itemize}
+    \item{Final Note}
+\end{enumerate}
+
+\subsection{History/Definition of the Golden Ratio}
+
+The golden ratio is a phenomenal number which has prevalence in a huge variety of mathematics and other pedigrees. Recognized potentially in 400 BC, this number has gained the attention of countless mathematicians and individuals of all different disciplines. This famous number is most common represented by the Greek letter phi, $\varphi$ and its approximation is 1.6180339887… (see section \ref{formulas}). The first possible unearthing of the golden ration lies in the Parthenon, a Greek temple built in 447BC. The structures embodiment of the golden ratio can be proven, however, whether it was used by chance or decision is a still debated subject. Euclid (325BC – 265BC) provided the first known written definition of the golden ration, although at the time he referred to it as the extreme and mean ratio. At this point the ratio has been researched and explored by countless mathematicians.
+
+Why is the golden ratio so special? The ratio, by assumption, was first discovered and researched because of its very common occurrence in geometry. Examples include the construction of a pentagon, hexagon and many other geometric shapes. It also has interesting ties with sequences such as the Fibonacci sequence.
+
+\subsection{Mathematical background}
+
+The mathematics of the golden ratio and of the Fibonacci sequence are intimately interconnected. The Fibonacci sequence is:
+$$
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, ....
+$$
+In the Final Project we will explore is the following relationship with the Fibanacci relationship:
+$$
+\lim_{n\to\infty}\frac{F(n+1)}{F(n)}=\varphi
+$$
+Where $F(n)$ represents the $nth$ term in the Fibonacci sequence
+
+\subsection{Existance in Euclidean Geometry}
+
+Reference the following link:
+$$
+http://aleph0.clarku.edu/~djoyce/java/elements/bookI/bookI.html
+$$
+
+\subsection{Formulas and algorithms}\label{formulas}
+
+The golden ratio is represented by the following equation:
+$$
+\varphi = {1+\sqrt{5} \over 2} = 1.61803398875...
+$$
+An infinite series can be derived to express phi:
+$$
+\varphi = {{13} \over 8} + \sum_{n=0}^{\infty}\frac{(-1)^{(n+1)}(2n+1)!}{(n+2)!n!4^{(2n+3)}}
+$$
+
+\subsection{Proofs}
+
+Construction of the polygon.
+
+Let L be the given circle which to inscribe the regular pentagon and A be the given point on L that will serve as one vertex of the pentagon. Locate the center O at L., and draw the segment OA, extend it past O and, mark the point P where the extended segment intersects L. Construct a line perpendicular to the line OA passing through O then mark its intersection with one side of L as the point B. Construct the point C as the midpoint of the line OB. Draw a circle C0 centered at C through the point A then mark its intersection line OB as the point D. Draw a circle C1 centered at A through the point D then mark its intersection with circle L as the points E and F.
+
+Draw a circle C2 centered at E through the point A then mark its other intersection with the circle L as the point G. similarly, Draw a circle C3 centered at F through the point A then mark its other intersection with the circle L as the point H. then draw the pentagon AFHGE which is inscribed in L by construction.
+
+We will show that AFHGE is equilateral. Note that segment AE is equal to segment AF since they are radii of the circle C1 centered at A. Segment EA is also equal to segment EG because both are radii of the circle C2 centered at E. similarly segment FA is equal to segment FH with the circle C3. Then segment GE = EA = AF = FH = HG. Therefore pentagon AFHGE is equilateral. Thus since every equilateral polygon inscribed in a circle is regular, Equilateral pentagon AFHGE in a circle L is regular.
+
+Therefore, we have constructed a regular pentagon inside of circle L.
+
+\hfill q.e.d
+
+\subsection{Final Note}
+
+LaTex is so awesome! I can honestly say this is a program I have been trying to find forever, I have taken a lot of classes involving proofs and always used Microsoft Word to type them up and it is such a pain to try and make it look nice. LaTex makes it easier and it looks better, that is the definition of a win/win situation!
+
+\end{document}
